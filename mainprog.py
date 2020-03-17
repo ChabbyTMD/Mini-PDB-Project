@@ -3,7 +3,7 @@ from pdbmenu import pdb_menu
 import os
 pdb_menu()
 wlc = True
-wlc_0 = True#while loop condition...
+wlc_0 = True#while loop condition (wlc)...
 userInput = input("Welcome, Enter option O or Q")
 userInput = userInput.upper() #To convert the input character into upper case
 while wlc_0 is True:
