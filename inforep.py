@@ -68,13 +68,14 @@ def infofunc(namefile):
                 elif seqres[32:33] not in sheet_dictionary:
                     sheet_dictionary[seqres[32:33]] = 1
 
-    print("Title: ", title_string)
+    print("Title: ", title_string) #Print the title of the PDB file
 
     chainnum_string = aminoacidcount_dictionary.keys()
 
     chainnum_string_1 = " and ".join(chainnum_string)
 
-    print("CHAINS: ", chainnum_string_1)
+    print("CHAINS: ", chainnum_string_1) #Print the Chain ID's of the various chains of the protein.
+    
     for x,y in aminoacidcount_dictionary.items():
         print("--Chain", x)
         print("Number of amino acids :", y)
