@@ -34,7 +34,7 @@ def infofunc(namefile):
                 #Amino acid code conversions.     
                 if seqres[11] not in amino_string:
                     seqres_list = seqres.split(" ") #Place string words into new list
-                    seqres_list_clean = [bb for bb in seqres_list[5:] if bb != '' and bb != '\n']#Remove empty string elements and new line characters from the list and placing them in a new list seqres_list_clean
+                    seqres_list_clean = [bb for bb in seqres_list[5:] if bb != '' and bb != '\n']#Read the record from the 5th element to the last element. Remove empty string elements and new line characters from the list and placing them in a new list seqres_list_clean.
                     seqres_complete = []
                     seqres_complete.extend(seqres_list_clean[1:])# Create and empty list seqres_complete and extend it with only amino acids. NOTE index[0] of seqres_list_clean contains the amino acid number 167. So add items starting from index 1.
                     whole_seq_string = ""
@@ -75,7 +75,7 @@ def infofunc(namefile):
     chainnum_string_1 = " and ".join(chainnum_string)
 
     print("CHAINS: ", chainnum_string_1) #Print the Chain ID's of the various chains of the protein.
-    
+
     for x,y in aminoacidcount_dictionary.items():
         print("--Chain", x)
         print("Number of amino acids :", y)
