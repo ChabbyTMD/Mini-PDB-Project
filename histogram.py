@@ -42,7 +42,7 @@ def amino_num_ascending(amino_acid_dictionary):
     # Iterate over the sorted sequence
     for elem in listofTuples :
         if elem[1]>0:
-            print(elem[0] , "*"*elem[1])
+            print(elem[0] , " :" , "*"*elem[1])
     
 def amino_num_descending(amino_acid_dictionary):
     """ This accepts a dictionary containing the number of each amino acid and prints a representation of amino acids in descending order according to number """
@@ -52,5 +52,5 @@ def amino_num_descending(amino_acid_dictionary):
     # Iterate over the sorted sequence
     for elem in listofTuples :
         if elem[1]>0:
-            print(elem[0] , "*"*elem[1])
+            print(elem[0] ,  " :" ,"*"*elem[1])
     
