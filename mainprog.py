@@ -1,6 +1,7 @@
 from inforep import infofunc #Modules for displaying title, number of amino acids, number of helices, number of sheets and sequence of different chains
 from pdbmenu import pdb_menu #print the user menu in terminal window
 import histogram as h #Modules to create a histogram representation of all the amino acids present in the protein.
+from secstruct import sec_struct#Module for the display of protein secondary structure
 import os
 pdb_menu()
 wlc = True
@@ -73,7 +74,9 @@ while wlc is True:
 			print("Warning: That input was invalid, please choose aa, da, an or dn next time :-) ")
 
 	elif userInput == "S":
-		print("To run function S")
+		sec_struct(filename)
+		print()
+		print()
 	elif userInput == "X":
 		print("To run function X")
 
