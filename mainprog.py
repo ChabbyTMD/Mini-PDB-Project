@@ -77,8 +77,6 @@ while wlc is True:
 		sec_struct(filename)
 		print()
 		print()
-	elif userInput == "X":
-		print("To run function X")
 
 	elif userInput == "Q":
 		print("Thank you for analysing with us, ... ByeBye...")
