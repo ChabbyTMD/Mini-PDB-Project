@@ -11,7 +11,6 @@ def pdb_menu(filename="None"):
     print('* %26s'%' 2) Information %33s'%'(I) %13s'%'*')
     print('* %44s'%' 3) Show histogram of amino acids %15s'%'(H) %13s'%'*')
     print('* %42s'%' 4) Display Secondary Structure %17s'%'(S) %13s'%'*')
-    print('* %30s'%' 5) Export PDB File %29s'%'(X) %13s'%'*')
     print('* %19s'%' 6) Exit %40s'%'(Q) %13s'%'*')
     print('* %64s'%'*')
     print('* %53s'%'Current PDB:', filename, "*")
