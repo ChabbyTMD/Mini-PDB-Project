@@ -1,2 +1,8 @@
 # Mini-PDB-Project
 Scripts to read and extract specific information from a PDB file
+
+## Usage
+
+```bash
+python3 main.py
+```
